@@ -1,0 +1,13 @@
+body{
+    background-color: gray;
+    color:white;
+}
+.main{
+    line-height: 100px;
+    text-align: center;
+    margin:auto;
+    margin-top:5rem;
+    height: 400px;
+    width: 400px;
+    background-color: darkgray;
+}
