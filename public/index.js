@@ -7,3 +7,11 @@ let request = async () => {
     console.log (response)
 }
 request()
+button = document.getElementById('button');
+input = document.getElementById('mail')
+function sendEmail (){
+    console.log(input.value);
+}
+button.addEventListener('click',sendEmail);
+
+
