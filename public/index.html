@@ -8,19 +8,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body> 
-    <div class='main'>
-
-        <div>Today the weather in London is :</div>
+    <section class='main'>
+        <h1>Today the weather in London is :</h1>
         <div id ='name'>Elo!</div>
-      
-        
         <form action="/send" method="POST">
-            <input type="email" name="newID" placeholder="Enter your e-mail" id='mail'/>
+            <input type='text' name='username' placeholder="Enter your name" id='username' />
+            <input type="email" name="newID" placeholder="Enter your e-mail" id='mail' />
             <input type="submit" value="Send" id='button'/>
         </form>
-
-    </div>
-  
+    </section>
     <script src='index.js'></script>
 </body>
 </html>
