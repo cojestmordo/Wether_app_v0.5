@@ -2,7 +2,7 @@ let request = async () => {
     const response = await fetch('/api');
     const data = await response.json();
     weather = data.current.condition.text
-    let hello = document.getElementById('name');
+    let hello = document.getElementById('weatherStatus');
     hello.innerHTML = weather;
     console.log (response)
 }
