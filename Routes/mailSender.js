@@ -9,8 +9,8 @@ app.post("/", (req, res) => {
   res.redirect('/')
   async function sendMail() {
 
-      const mail_key = process.env.MAIL_KEY
-      const weather = 'elo'
+      const mail_key = process.env.MAIL_KEY;
+      const weather = 'xd'
     
       let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -27,10 +27,9 @@ app.post("/", (req, res) => {
         text: `Weather in London is: ${weather}`, // plain text body
         html: `<b>Weather in London is: ${weather}</b>`, // html body
       });
-
       console.log("Message sent: %s", info.messageId);
   }
-    sendMail().catch(console.error);
+  sendMail().catch(console.error);
 });
 
 module.exports = app;

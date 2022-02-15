@@ -1,9 +1,12 @@
 let request = async () => {
     const response = await fetch('/api');
     const data = await response.json();
-    weather = data.current.condition.text
-    let hello = document.getElementById('weatherStatus');
-    hello.innerHTML = weather;
+    const currentWeatherData = data.current.condition.text
+    const forecastWeatherData = data.forecast.forecastday[1].day.condition.text
+    let currentWeatherBox = document.getElementById('currentWeather');
+    let forecastWeatherBox = document.getElementById('forecastWeather');
+    forecastWeatherBox.innerHTML = forecastWeatherData;
+    currentWeatherBox.innerHTML = currentWeatherData;
     console.log (response)
 }
 request()
