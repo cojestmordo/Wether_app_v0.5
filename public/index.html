@@ -9,13 +9,19 @@
 </head>
 <body> 
     <section class='main'>
-        <h1>Today the weather in Warsaw is :</h1>
+        <h1>Weather in Warsaw :</h1>
+        <h2>Forecast for today is: </h2>
         <div id ='currentWeather'>Elo!</div>
+        <h2>Forecast for tommorow is: </h2>
         <div id ='forecastWeather'>Elo!</div>
         <form action="/send" method="POST">
+            <label for='city'>City</label>
+            <input type='text' name='city' placeholder="city" id='city' />
+            <label for='username'>Username</label>
             <input type='text' name='username' placeholder="Enter your name" id='username' />
-            <input type="email" name="newID" placeholder="Enter your e-mail" id='mail' />
-            <input type="submit" value="Send" id='button'/>
+            <label for='email'>Email</label>
+            <input type='email' name="newID" placeholder="Enter your e-mail" id='mail' />
+            <input type='submit' value="Send" id='button'/>
         </form>
     </section>
     <script src='index.js'></script>

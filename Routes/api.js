@@ -14,7 +14,6 @@ app.get('/',  (req, res) => {
             url: `http://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${city}&days=2&aqi=no&alerts=no`
         }
         let api_res = await axios(config)
-        // const weather = api_res.data.current.condition.text;
         return res.json(api_res.data)
     }
    getAPI();
