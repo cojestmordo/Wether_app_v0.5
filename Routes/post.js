@@ -25,7 +25,6 @@ app.post("/", (req, res) => {
       })
 
     } catch (e) {
-      console.log(e);
     } finally {
       await client.close();
     }

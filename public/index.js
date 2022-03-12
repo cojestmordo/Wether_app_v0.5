@@ -7,7 +7,6 @@ let request = async () => {
     let forecastWeatherBox = document.getElementById('forecastWeather');
     forecastWeatherBox.innerHTML = forecastWeatherData;
     currentWeatherBox.innerHTML = currentWeatherData;
-    console.log (response)
 }
 request()
 button = document.getElementById('button');
@@ -16,5 +15,4 @@ function sendEmail (){
     console.log(input.value);
 }
 button.addEventListener('click',sendEmail);
-
 

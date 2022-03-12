@@ -20,5 +20,8 @@
     "nodemailer": "^6.7.2",
     "nodemon": "^2.0.15"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
